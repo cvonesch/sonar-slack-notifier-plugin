@@ -27,7 +27,7 @@ public class ProjectAnalysisPayloadBuilderTest {
     private static final boolean QG_FAIL_ONLY = true;
     CaptorPostProjectAnalysisTask postProjectAnalysisTask;
     DefaultI18n i18n;
-    
+
     Locale defaultLocale;
 
     @Before
@@ -43,11 +43,11 @@ public class ProjectAnalysisPayloadBuilderTest {
         defaultLocale = Locale.getDefault();
         Locale.setDefault(Locale.US);
     }
-    
+
     @After
     public void after(){
         Locale.setDefault(defaultLocale);
-        
+
     }
 
     @Test
@@ -78,22 +78,22 @@ public class ProjectAnalysisPayloadBuilderTest {
         List<Attachment> attachments = new ArrayList<>();
         List<Field> fields = new ArrayList<>();
         fields.add(Field.builder()
-                .title("New Vulnerabilities: OK")
+                .title("New! Vulnerabilities: OK")
                 .value("0, error if >0")
                 .valueShortEnough(false)
                 .build());
         fields.add(Field.builder()
-                .title("New Bugs: ERROR")
+                .title("New! Bugs: ERROR")
                 .value("1, error if >0")
                 .valueShortEnough(false)
                 .build());
         fields.add(Field.builder()
-                .title("Technical Debt Ratio on New Code: OK")
+                .title("Technical! Debt Ratio on New Code: OK")
                 .value("0.01%, warning if >2.0%, error if >10.0%")
                 .valueShortEnough(false)
                 .build());
         fields.add(Field.builder()
-                .title("Coverage on New Code: ERROR")
+                .title("Coverage! on New Code: ERROR")
                 .value("75.51%, error if <80.0%")
                 .valueShortEnough(false)
                 .build());

@@ -18,16 +18,16 @@
 
     <!-- JaCoCo support -->
     <argLine />
-    <sonar.version>6.1</sonar.version>
+    <sonar.version>6.4</sonar.version>
   </properties>
 
   <scm>
-    <connection>scm:git:git@github.com:kogitant/sonar-slack-notifier-plugin.git</connection>
-    <url>scm:git:git@github.com:kogitant/sonar-slack-notifier-plugin.git</url>
-    <developerConnection>scm:git:git@github.com:kogitant/sonar-slack-notifier-plugin.git</developerConnection>
+    <connection>scm:git:git@github.com:cvonesch/sonar-slack-notifier-plugin.git</connection>
+    <url>scm:git:git@github.com:cvonesch/sonar-slack-notifier-plugin.git</url>
+    <developerConnection>scm:git:git@github.com:cvonesch/sonar-slack-notifier-plugin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
-  
+
 
   <dependencies>
     <!-- Dependencies provided by SonarQube server -->
@@ -146,12 +146,12 @@
           <pluginClass>com.koant.sonar.slacknotifier.SlackNotifierPlugin</pluginClass>
           <pluginName>CKS Slack Notifier</pluginName>
           <pluginDescription>Sends notifications to Slack</pluginDescription>
-          <sonarQubeMinVersion>6.1</sonarQubeMinVersion>
-          <pluginUrl>https://github.com/kogitant/sonar-slack-notifier-plugin</pluginUrl>
-          <pluginIssueTrackerUrl>https://github.com/kogitant/sonar-slack-notifier-plugin/issues</pluginIssueTrackerUrl>
-          <pluginSourcesUrl>https://github.com/kogitant/sonar-slack-notifier-plugin</pluginSourcesUrl>
+          <sonarQubeMinVersion>6.4</sonarQubeMinVersion>
+          <pluginUrl>https://github.com/cvonesch/sonar-slack-notifier-plugin</pluginUrl>
+          <pluginIssueTrackerUrl>https://github.com/cvonesch/sonar-slack-notifier-plugin/issues</pluginIssueTrackerUrl>
+          <pluginSourcesUrl>https://github.com/cvonesch/sonar-slack-notifier-plugin</pluginSourcesUrl>
           <pluginOrganizationName>Antti Koivisto</pluginOrganizationName>
-          <pluginOrganizationUrl>https://github.com/kogitant</pluginOrganizationUrl>
+          <pluginOrganizationUrl>https://github.com/cvonesch</pluginOrganizationUrl>
         </configuration>
       </plugin>
     </plugins>
